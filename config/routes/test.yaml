@@ -1,11 +1,11 @@
-# test:
-#   path: /test/{age<\d+>?0}
-#   controller: App\Controller\TestController::test
-#   #   defaults:
-#   #     age: 0
-#   #   requirements:
-#   #     age: \d+
-#   #   contrainte sur les methodes, autoriser la methodes post ou get ou les deux
-#   methods: [GET, POST]
+test:
+  path: /test/{age<\d+>?0}
+  controller: App\Controller\TestController::test
+  #   #   defaults:
+  #   #     age: 0
+  #   #   requirements:
+  #   #     age: \d+
+  #   #   contrainte sur les methodes, autoriser la methodes post ou get ou les deux
+  methods: [GET, POST]
 # #   contraintes sur les routes : si on veut que la route soit accessible que avec https ou http au choix
 # # schemes: [http, https] ne marche pas !!!

@@ -8,3 +8,9 @@
 app_homepage:
   path: /
   controller: App\Controller\TestController::index
+
+hello:
+  path: /hello/{name}
+  controller: App\Controller\HelloController::hello
+  defaults:
+    name: "world"
